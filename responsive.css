@@ -1,0 +1,11 @@
+@media screen and (max-width:500px){
+    header{
+        height: 9vh;
+    }
+    a img{
+        width: 15vw;
+    }
+    .redes{
+        display: none;
+    }
+}
