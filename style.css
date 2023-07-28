@@ -10,6 +10,7 @@ body{
     font-family: 'Roboto Serif', sans-serif;
 }
 
+/* HEADER =========== */
 header{
     display: flex;
     justify-content: space-around;
@@ -45,6 +46,8 @@ header h2{
     font-size: 15px;
 }
 
+/* MAIN ================ */
+
 .primeirasessao{
     background-image: url(./img/primeirasessao.png);
     background-repeat: no-repeat;
@@ -58,19 +61,28 @@ header h2{
 }
 
 .primeirasessao div{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     color: #fff;
     font-size: 32px;
-    width: 35vw;
-    height: 60vh;
+    width: 44vw;
+    height: 30vh;
+    margin-bottom: 250px;
 }
 
 .primeirasessao h1{
     text-align: center;
     justify-content: center;
-    line-height: 90%;
+
 }
 
+.primeirasessao img{
+    width: 90px;
+    margin-top: 20px;
+
+}
+/* SEGUNDA SESSÃO ========= */
 .segundasessao{
     background-image: url(./img/segundasessao.png);
     background-position: center;
@@ -85,22 +97,45 @@ header h2{
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 50vw;
-    height: 20vh;
-    justify-content: right;
+    padding-left: 35px;
+    width: 44vw;
+    height: 80vh;
+    justify-content: center;
     color: #34342f;
 }
 
 .segundasessao h2{
+    text-align: center;
+    justify-content: center;
     font-size: 49px;
+    margin-bottom: 15px;
 }
 .segundasessao p{
+    width: 31vw;
+    height: 38vh;
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
     font-size: 24px;
-    line-height: 30px;
+    line-height: 34px;
 }
 
+.segundasessao button{
+    width: 20vw;
+    height: 12vh;
+    background-color: #34342f;
+    font-size: 27px;
+    font-weight: 700;
+    color: #f4f2f3;
+    border-radius: 34px;
+    border: none;
+
+}
+.segundasessao button:hover{
+    background-color:#EB4A7B;
+    transition: 0.5s ease-in-out;
+}
+
+/* TERCEIRA SESSAO ============ */
 .terceirasessao{
     background-image: url(./img/terceirasessao.png);
     background-position: center;
@@ -108,8 +143,54 @@ header h2{
     background-size: 100% 100%;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: right;
 }
 
+.terceirasessao div{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-align: left;
+    width: 40vw;
+    height: 80vh;
+    color: #fff;
+    padding: 50px;
+}
+
+.terceirasessao h2{
+    width: 24vw;
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 48px;
+}
+
+.terceirasessao p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    width: 32vw;
+    height: 30vh;
+    line-height: 30px;
+}
+
+.terceirasessao button{
+    width: 20vw;
+    height: 12vh;
+    background-color: #fff;
+    font-size: 27px;
+    font-weight: 700;
+    color: #000;
+    border-radius: 34px;
+    border: none;
+}
+
+.terceirasessao button:hover{
+    background-color: #34342f;
+    color: #f4f2f3;
+    transition: 0.5s ease-in-out;
+}
+
+/* APOIO  ======== */
 .apoio{
     display: flex;
     justify-content: space-evenly;
@@ -119,18 +200,37 @@ header h2{
     height: 20vh;
 }
 .apoio p{
-    font-size: 24px;
+    font-family: "Roboto Serif", sans-serif;
     font-style: italic;
+    font-size: 21px;
     font-weight: 100;
+    color: #fd6a9a;
 }
 .apoio img{
     width: 15vw;
 
 }
+
+/* FOOTER ========== */
 footer{
     background-color: #EB4A7B;
     color: #fff;
     height: 40vh;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
 }
+
+ .footer section{
+    width: 18vw;
+    height: 25vh;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40px;
+ }
+
+ .footer h2{
+    font-family: 'Roboto Serif', sans-serif;
+ }
+
+ .footer nav{
+    margin-top: 15px;
+ }

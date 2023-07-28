@@ -1,10 +1,12 @@
 @media screen and (max-width:500px){
     header{
-        height: 9vh;
+        height: 15vh;
     }
-    a img{
-        width: 15vw;
-    }
+   header div{
+    width: 25vw;
+    height: 12vh;
+   }
+
     .redes{
         display: none;
     }
