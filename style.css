@@ -4,9 +4,10 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 
-body{
+h2, h4{
     font-family: 'Roboto Serif', sans-serif;
 }
 
@@ -40,6 +41,12 @@ header nav{
 
 .navigation img{
     width: 3vw;
+    transition: all 0.3s ease;
+}
+
+.navigation a:hover{
+    color: #ffffff;
+    padding-bottom: 8px;
 }
 
 header h2{
@@ -74,6 +81,7 @@ header h2{
 .primeirasessao h1{
     text-align: center;
     justify-content: center;
+    font-family: 'Roboto Serif', sans-serif;
 
 }
 
@@ -87,36 +95,27 @@ header h2{
     background-image: url(./img/segundasessao.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
-    width: 100vw;
+    background-size: 100% 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .segundasessao div{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding-left: 35px;
-    width: 44vw;
-    height: 80vh;
-    justify-content: center;
+    justify-content: space-between;
+    width: 40vw;
+    height: 52vh;
+    margin-left: 35px;
     color: #34342f;
 }
 
 .segundasessao h2{
-    text-align: center;
-    justify-content: center;
     font-size: 49px;
-    margin-bottom: 15px;
 }
 .segundasessao p{
-    width: 31vw;
-    height: 38vh;
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 27px;
 }
 
 .segundasessao button{
@@ -126,13 +125,14 @@ header h2{
     font-size: 27px;
     font-weight: 700;
     color: #f4f2f3;
-    border-radius: 34px;
+    border-radius: 44px;
     border: none;
 
 }
 .segundasessao button:hover{
     background-color:#EB4A7B;
     transition: 0.5s ease-in-out;
+    padding-bottom: 8px;
 }
 
 /* TERCEIRA SESSAO ============ */
@@ -144,33 +144,26 @@ header h2{
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: right;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
 .terceirasessao div{
     display: flex;
-    justify-content: center;
-    align-items: left;
     flex-direction: column;
-    text-align: left;
-    width: 40vw;
-    height: 80vh;
+    justify-content: space-between;
+    width: 34vw;
+    height: 65vh;
+    margin-right: 25px;
     color: #fff;
-    padding: 50px;
 }
 
 .terceirasessao h2{
-    width: 24vw;
-    font-family: 'Roboto Serif', sans-serif;
     font-size: 48px;
 }
 
 .terceirasessao p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 23px;
-    width: 32vw;
-    height: 30vh;
-    line-height: 30px;
+    font-size: 27px;
 }
 
 .terceirasessao button{
@@ -180,7 +173,7 @@ header h2{
     font-size: 27px;
     font-weight: 700;
     color: #000;
-    border-radius: 34px;
+    border-radius: 44px;
     border: none;
 }
 
@@ -188,6 +181,7 @@ header h2{
     background-color: #34342f;
     color: #f4f2f3;
     transition: 0.5s ease-in-out;
+    padding-bottom: 8px;
 }
 
 /* APOIO  ======== */
@@ -196,41 +190,70 @@ header h2{
     justify-content: space-evenly;
     align-items: center;
     color:#EB4A7B;
-    font-family: 'Roboto Serif', sans-serif;
     height: 20vh;
 }
+
+.apoio div{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
 .apoio p{
     font-family: "Roboto Serif", sans-serif;
     font-style: italic;
-    font-size: 21px;
-    font-weight: 100;
+    font-size: 24px;
     color: #fd6a9a;
 }
 .apoio img{
+    justify-content: space-between;
     width: 15vw;
 
 }
 
 /* FOOTER ========== */
-footer{
+.footer{
+    display: flex;
     background-color: #EB4A7B;
     color: #fff;
-    height: 40vh;
-    display: flex;
-    align-items: center;
+    height: 38vh;
+
 }
 
- .footer section{
-    width: 18vw;
-    height: 25vh;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 40px;
- }
+.logo, .social-links{
+    display: none;
+    transition: all 0.3s ease;
+}
 
- .footer h2{
-    font-family: 'Roboto Serif', sans-serif;
- }
+.social-links ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
 
- .footer nav{
-    margin-top: 15px;
- }
+.menu-footer h4{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.menu-footer ul li a{
+	font-size: 15px;
+	color: #ffffff;
+	font-weight: 400;
+    line-height: 25px;
+	display: block;
+}
+
+.menu-footer ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+.contatos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    width: 60vw;
+}
